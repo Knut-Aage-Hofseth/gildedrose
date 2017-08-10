@@ -1,4 +1,5 @@
 node {
+   
    stage ('Preparation') {
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'af8e255b-7254-4a6c-8ac3-4b4d27af818e', url: 'git@github.com:Knut-Aage-Hofseth/gildedrose.git']]])
    }  
